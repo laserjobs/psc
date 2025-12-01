@@ -14,6 +14,10 @@ jobs:
       with:
         python-version: '3.10'
         
-    - name: Run Integrity & Entropy Tests
+    - name: 🔬 Run Unit Tests (Silent Check)
       run: |
         python -m unittest tests/test_suite.py
+
+    - name: 👁️ Run Visual Demonstration (Public Proof)
+      run: |
+        python demo.py
